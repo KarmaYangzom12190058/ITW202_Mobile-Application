@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Implicit Intents</string>
+    <string name="first">http://developer.android.com</string>
+    <string name="second">Golden State Bridge</string>
+    <string name="third">Hello! I am Back.</string>
+    <string name="share">Share This Text</string>
+    <string name="openl">OPen Location</string>
+    <string name="openW">Open Website</string>
+</resources>

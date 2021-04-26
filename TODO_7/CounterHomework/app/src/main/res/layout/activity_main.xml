@@ -44,6 +44,7 @@
         android:backgroundTint="@color/purple_500"
         android:ems="10"
         android:hint="This is an edit text"
+        android:textColorHint="@color/black"
         android:inputType="textPersonName"
         android:text=""
         android:textSize="20sp"

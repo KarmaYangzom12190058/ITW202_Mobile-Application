@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,9 +12,12 @@
         android:id="@+id/button_1"
         android:layout_width="match_parent"
         android:layout_height="95dp"
-        android:text="TOAST"
+        android:backgroundTint="@color/blue"
         android:onClick="toast"
-        android:backgroundTint="@color/blue" />
+        android:text="TOAST"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="25dp" />
 
     <TextView
         android:id="@+id/textView"
@@ -21,14 +25,15 @@
         android:layout_height="550dp"
         android:background="@color/yellow"
         android:text="0"
-        android:textStyle="bold"
-        android:textSize="350dp"
         android:textAlignment="center"
         android:textColor="@color/blue"
+        android:textSize="350sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal" />
 
     <Button
         android:id="@+id/button_2"

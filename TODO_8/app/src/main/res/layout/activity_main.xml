@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/website"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/first"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/openW"
+        android:onClick="open_Website"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/second" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/openl"
+        android:onClick="open_Location"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/shareText"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/third" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/share"
+        android:onClick="share_Text"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

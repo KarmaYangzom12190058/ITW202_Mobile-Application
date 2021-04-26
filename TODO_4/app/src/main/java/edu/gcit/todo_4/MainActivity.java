@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    public static final String EXTRA_message = "edu.gcit.todo_4";
+    public final static String EXTRA_message = "edu.gcit.todo_4";
 
     public static int TextRequest = 1;
     private EditText Send_Message;

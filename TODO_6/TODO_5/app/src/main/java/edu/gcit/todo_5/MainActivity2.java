@@ -18,6 +18,7 @@ public class MainActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+
         Intent obj = getIntent();
         String message = obj.getStringExtra(MainActivity.EXTRA_message);
         TextView text = findViewById(R.id.Display_message);
