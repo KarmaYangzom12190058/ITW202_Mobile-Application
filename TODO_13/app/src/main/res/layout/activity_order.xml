@@ -10,31 +10,29 @@
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="28dp"
         android:text="@string/name"
-        android:textSize="16sp"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/inputName"
-        app:layout_constraintHorizontal_bias="0.3"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.07999998"
+        app:layout_constraintTop_toBottomOf="@+id/mes"
         tools:ignore="UnknownId" />
 
     <EditText
         android:id="@+id/inputName"
         android:layout_width="190dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
+        android:layout_marginTop="21dp"
         android:ems="10"
         android:hint="@string/enterName"
         android:inputType="textPersonName"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.06999999"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/mes"
         tools:ignore="UnknownId" />
 
     <TextView
@@ -65,10 +63,10 @@
         android:id="@+id/phone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="52dp"
         android:text="@string/phone"
-        android:textSize="16sp"
         android:textColor="@color/black"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/address"
         app:layout_constraintTop_toBottomOf="@+id/address" />
 
@@ -81,7 +79,7 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="@string/enterPhone"
-        android:inputType="textPersonName"
+        android:inputType="phone"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
         app:layout_constraintHorizontal_bias="0.7"
         app:layout_constraintStart_toEndOf="@+id/phone"
@@ -90,10 +88,11 @@
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
         app:layout_constraintStart_toEndOf="@+id/inputPhone"
         app:layout_constraintTop_toBottomOf="@+id/inputAddress" />
 
@@ -101,10 +100,10 @@
         android:id="@+id/note"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="60dp"
         android:text="@string/note"
-        android:textSize="16sp"
         android:textColor="@color/black"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/phone"
         app:layout_constraintTop_toBottomOf="@+id/phone" />
 
@@ -112,12 +111,12 @@
         android:id="@+id/inputNote"
         android:layout_width="190dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="@string/enterNote"
         android:inputType="textMultiLine"
         app:layout_constraintEnd_toEndOf="@+id/spinner"
-        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintHorizontal_bias="0.582"
         app:layout_constraintStart_toEndOf="@+id/note"
         app:layout_constraintTop_toBottomOf="@+id/inputPhone" />
 
@@ -148,23 +147,34 @@
             android:id="@+id/sameDay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/sameday"
             android:checked="true"
-            android:onClick="radiobot"/>
+            android:onClick="radiobot"
+            android:text="@string/sameday" />
 
         <RadioButton
             android:id="@+id/nextDay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/nextday"
-            android:onClick="radiobot" />
+            android:onClick="radiobot"
+            android:text="@string/nextday" />
 
         <RadioButton
             android:id="@+id/pickUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/pickup"
-            android:onClick="radiobot"/>
+            android:onClick="radiobot"
+            android:text="@string/pickup" />
     </RadioGroup>
+
+    <TextView
+        android:id="@+id/mes"
+        android:layout_width="202dp"
+        android:layout_height="27dp"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

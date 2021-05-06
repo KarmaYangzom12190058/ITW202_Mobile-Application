@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+    public static final String EXTRA_message = "edu.gcit.todo_12";
+    String mssg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +37,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void shop(View view) {
-        Intent obj = new Intent(this, OrderActivity.class);
+        Intent obj = new Intent(MainActivity.this, OrderActivity.class);
+        obj.putExtra(EXTRA_message, mssg);
         startActivity(obj);
     }
 }
