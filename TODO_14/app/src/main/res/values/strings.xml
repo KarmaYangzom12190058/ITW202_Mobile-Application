@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">TODO_12</string>
+    <string name="topic">Droid Desserts</string>
+    <string name="secondN">Order Activity</string>
+    <string name="order_D">You Ordered a Donut!</string>
+    <string name="order_I">You Ordered a IceCream!</string>
+    <string name="order_F">You Ordered a Froyo!</string>
+    <string name="donut">Donuts are glazed and sprinkled with candy.</string>
+    <string name="icecream">Ice cream sandwiches have chocolate wafers and vanilla filling.</string>
+    <string name="froyo">FroYo is premium self-serve frozen yogurt.</string>
+    <string name="name">Name</string>
+    <string name="enterName">Enter your Name</string>
+    <string name="address">Address</string>
+    <string name="enterAddress">Enter your Address</string>
+    <string name="phone">Phone</string>
+    <string name="enterPhone">Enter Phone</string>
+    <string name="note">Note</string>
+    <string name="enterNote">Enter note</string>
+    <string name="enterRadio">Choose a delivery method:</string>
+    <string name="sameday">Same day messenger service</string>
+    <string name="nextday">Next day ground delivery</string>
+    <string name="pickup">Pick Up</string>
+    <string-array name="phone_label">
+        <item>Home</item>
+        <item>Work</item>
+        <item>Mobile</item>
+        <item>Other</item>
+    </string-array>
+</resources>
