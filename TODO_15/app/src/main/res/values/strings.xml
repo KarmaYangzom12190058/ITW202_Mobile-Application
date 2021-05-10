@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TODO_15</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello1">Fragment 1 include top stories.</string>
+    <string name="hello2">Fragment 2 include tech news.</string>
+    <string name="hello3">Fragment 3 include cooking stories.</string>
+</resources>
