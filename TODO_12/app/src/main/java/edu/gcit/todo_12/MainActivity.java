@@ -18,19 +18,19 @@ public class MainActivity extends AppCompatActivity {
 
     public void donut(View view) {
         String mssg = "You Ordered a Donut!";
-        Toast toast = Toast.makeText(this,mssg, Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(this, mssg, Toast.LENGTH_SHORT);
         toast.show();
     }
 
     public void icecream(View view) {
         String mssg = "You Ordered a IceCream!";
-        Toast toast = Toast.makeText(this,mssg, Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(this, mssg, Toast.LENGTH_SHORT);
         toast.show();
     }
 
     public void froyo(View view) {
         String mssg = "You Ordered a Froyo!";
-        Toast toast = Toast.makeText(this,mssg, Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(this, mssg, Toast.LENGTH_SHORT);
         toast.show();
     }
 

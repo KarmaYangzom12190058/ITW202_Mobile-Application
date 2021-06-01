@@ -36,6 +36,12 @@ public class OrderActivity extends AppCompatActivity implements AdapterView.OnIt
         }
     }
 
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        String message = parent.getItemAtPosition(position).toString();
+        DisplayToast(message);
+    }
+
     public void radiobot(View view) {
         boolean checked = ((RadioButton) view).isChecked();
 
@@ -61,11 +67,7 @@ public class OrderActivity extends AppCompatActivity implements AdapterView.OnIt
         Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
     }
 
-    @Override
-    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        String message = parent.getItemAtPosition(position).toString();
-        DisplayToast(message);
-    }
+
 
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
