@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Dzongkha Proverbs</string>
+    <string name="title_proverb">དཔྱེ་གཏམ།</string>
+    <string name="title_favorite">དཔྱེ་གཏམ་དགའ་ཤོས།</string>
+    <string name="dzongkha_proverbs">Dzongkha Proverbs</string>
+    <string name="about_info">
+        Dzongkha Proverbs app is for anyone who wants to know and learn Dzongkha proverbs easily.
+        \nFor feedback and other suggestions please send email to the given address:
+        \n12190058.gcit@rub.edu.bt
+    </string>
+    <string name="dz_Proverbs">དབྱེ་གཏམ།</string>
+    <string name="about">About</string>
+    <string name="night">Night Mode</string>
+    <string name="share">Share App</string>
+</resources>

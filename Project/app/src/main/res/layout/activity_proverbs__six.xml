@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/p23">
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".proverbs_Five">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/peach">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:background="@color/cap">
+
+                <TextView
+                    android:id="@+id/proverbs_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="16dp"
+                    android:textSize="17sp"
+                    android:lineHeight="25dp"
+                    android:gravity="center_horizontal"
+                    android:text="ཆརཔ་ཕར་རྐྱབ།  ཟིལཔ་ཚུར་ཁ་རེག།
+ཆརཔ་ཕར་ཁ་རྐྱབ་རུང་།  ཟིལཔ་ཚུར་ཁ་ཕོག་འོང་།
+ཟེར་མི་དཔྱེ་གཏམ་འདི་ནི་ གནམ་བྱཱར་ཆརཔ་རྐྱབ་པའི་སྐབས་ རྐྱབ་ས་ཕར་ཁ་ཨིན་རུང་ ཆར་ཟིལ་རློནམ་ཚུར་ཁ་རེགཔ་མས། དེ་སྦེ་གཏམ་རོགས་ལུ་སླབ་དོ་བཟུམ་འབད་ གཏམ་ངན་དང་ཚིག་ངན། ཡང་ན་ བསྟོད་ཚིག་དང་སྨད་ཚིག་ལ་སོགས་ འཇིག་རྟེན་ཆོས་བརྒྱད་ཀྱི་ལོ་རྒྱུས་ག་ཅི་རང་ཨིན་རུང་ རོགས་ཀྱིས་ཟུར་ཙམ་ཅིག་སླབ་པའི་བསྒང་ལས་ རང་ལུ་སླབ་མེན་ན་མོན་སྟེ་ གོ་བ་ནང་ན་ཁུག་དགོ་ ཟེར་བཤད་པའི་དོན་ཨིན།།
+"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    tools:targetApi="LOLLIPOP" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="665dp"
+        android:layout_marginBottom="30dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/copyBtn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:clickable="true"
+                        android:onClick="copy"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        app:cardCornerRadius="500dp"
+                        app:cardElevation="3dp">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="14dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_copy"/>
+
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/shareBtn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:clickable="true"
+                        android:onClick="share"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        app:cardCornerRadius="500dp"
+                        app:cardElevation="3dp">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_share"/>
+
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/count_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:text="༦/༢༥"
+        android:textSize="22sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/black" />
+
+</RelativeLayout>
+</ScrollView>
